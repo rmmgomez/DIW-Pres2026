@@ -1,0 +1,27 @@
+/* .caja-relative {
+  position: relative;
+  background-color: lightgreen;
+  left: 20px;
+  top: 320px;
+}
+
+.caja-normal {
+  background-color: lightblue;
+} */
+
+.contenedor-relativo {
+  position: relative; /* ¡CLAVE! Hace que la caja-absolute se posicione respecto a él. */
+  width: 300px;
+  height: 150px;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.caja-absolute {
+  position: absolute;
+  background-color: lightcoral;
+  /* Posiciona la caja 10px desde la parte superior del contenedor-relativo */
+  top: 10px;
+  /* Posiciona la caja 5px desde la derecha del contenedor-relativo */
+  right: 5px;
+}

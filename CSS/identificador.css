@@ -1,0 +1,11 @@
+#atras{
+    background-color: red;
+}
+button.btn-page{
+    background-color: gray;
+    color: white;
+}
+button, 
+a{
+    background-color: azure; /* ¿Se aplicará este color? */
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="formulario" method="post" action="#">
+     <meter min="0" max="100" value="91" low="50" high="90" >
+</form>
+    <form name="formulario" method="post" action="#">
+     <progress value="50" max="100">50%</progress>
+</form>
+    <form name="formulario" method="post" action="#">
+     <label>Selecciona un color: </label>
+     <input type="color" name="color" value="#F4F4F4">
+</form>
+    <form name="formulario" method="post" action="#">
+        <label>¿Qué navegador usas?:</label>
+        <input list="browsers" name="myBrowser">
+        <datalist id="browsers">
+            <option value="Chrome"></option>
+            <option value="Firefox"></option>
+            <option value="Internet Explorer"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+            <option value="Microsoft Edge"></option>
+        </datalist>
+    </form>
+
+    <form name="formulario" method="post" action="#">
+        <select id="os-select">
+            <optgroup label="Windows">
+                <option value="win11">Windows 11</option>
+                <option value="win10">Windows 10</option>
+                <option value="winvista">Windows Vista</option>
+            </optgroup>
+            <optgroup label="Linux">
+                <option value="debian">Deban</option>
+                <option value="ubuntu">Ubuntu</option>
+                <option value="fedora">Fedora</option>
+            </optgroup>
+        </select>
+    </form>
+    <form name="formulario" method="post" action="#"></form>
+    <select name="sistema">
+        <option value="ninguno">Selecciona tu SO</option>
+        <option value="windows">Windows</option>
+        <option value="linux">Linux</option>
+        <option value="osx">MacOS</option>
+        <option value="unix">Unix</option>
+    </select>
+    </form>
+
+    <br><br>
+
+    <form name="formulario" method="post" action="#">
+        <label>Selecciona una fecha</label>
+        <input type="date" name="fecha" min="2021-10-25" max="2022-08-25" step="2">
+        <label>Selecciona una hora</label>
+        <input type="time" name="hora" min="18:00" max="21:00" step="3600">
+        <label>Selecciona una fecha y hora</label>
+        <input type="datetime-local">
+        <input type="submit" value="Enviar">
+    </form>
+    <form name="formulario" method="post" action="#">
+        <!-- Número entre 5 y 50, de 5 en 5. Valor por defecto: 25 -->
+        <input type="number" name="numero" value="25" min="5" max="50" step="5" />
+        <!-- Su misma versión, utilizando range -->
+        <input type="range" name="numrango" value="25" min="5" max="50" step="5" />
+        <input type="submit" value="Enviar">
+    </form>
+    <form name="formularioEjemplo" action="#" method="get">
+        <textarea name="textoLargo" cols="80" rows="10" placeholder="Introduce la opinión del curso">
+          Este es el valor por defecto, no se usa value
+     </textarea>
+        <label>Teléfono</label>
+        <input type="tel" name="telefono" placeholder="+XX XXX XXXXXX">
+        <label>Email</label>
+        <input type="email" name="correo" placeholder="nombre@dominio.com">
+        <label>Página web</label>
+        <input type="url" name="web" placeholder="https://pagina.com/">
+        <input type="email" name="email" placeholder="Introduce tu correo" value="">
+        <input autofocus autocomplete="off" type="password" name="password" placeholder="Introduce tu pass" value="">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>

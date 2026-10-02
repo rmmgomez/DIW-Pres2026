@@ -1,0 +1,25 @@
+.contenedor {
+  width: 400px;
+  border: 2px solid grey;  
+  outline: 2px solid red;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.caja-normal {
+  background-color: #ffcccc; /* Rojo claro */
+  margin-bottom: 10px;
+}
+
+.caja-max-content {
+  width: max-content;
+  background-color: #fff3cd; /* Amarillo */
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.caja-min-content {
+  width: min-content;
+  background-color: #e9d8fd; /* Morado claro */
+  padding: 10px;
+}

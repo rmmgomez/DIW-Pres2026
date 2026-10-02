@@ -1,0 +1,14 @@
+/* Se aplica a los enlaces (<a>) que nunca han sido visitados por el usuario. */
+a:link {
+    color: #007bff;
+    text-decoration: none; /* Sin subrayado por defecto */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Se aplica a los enlaces (<a>) que han sido visitados por el usuario. */
+a:visited {
+    color: #28a745; /* Verde para indicar que ya lo vimos */
+    text-decoration: none;
+    font-weight: normal;
+}

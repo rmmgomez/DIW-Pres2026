@@ -1,0 +1,13 @@
+/* li:nth-last-child(even){
+    color: red;
+}
+li:nth-last-child(odd){
+    color: green;
+} */
+
+li:nth-last-child(2n+1){
+    color: red;
+}
+li:nth-last-child(2n){
+    color: green;
+}
