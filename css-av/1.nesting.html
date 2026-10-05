@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo nesting</title>
+    <link rel="stylesheet" href="1.nesting.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="titulo">Mi Aules</h1>
+        <nav class="menu">
+            <a href="#" class="menu-item">Inicio</a>
+            <a href="#" class="menu-item">Formación</a>
+            <a href="#" class="menu-item">Noticias</a>
+            <a href="#" class="menu-item">Soporte</a>
+        </nav>
+    </header>
+    <main>
+        <ul class="lista-custom">
+            <li>Primer elemento</li>
+            <li>Segundo elemento</li>
+            <li>Tercer elemento</li>
+        </ul>
+        <button class="btn-rojo">Normal</button>
+        <button class="btn-rojo activo">Activo</button>
+        <div class="card">
+            <p>Este párrafo es un hijo directo y se pondrá en negrita.</p>
+            <div>
+                <p>Este párrafo NO es un hijo directo, es nieto. No se verá afectado.</p>
+            </div>
+        </div>
+        <div class="articulo">
+            <p>Este artículo tiene un estilo normal.</p>
+        </div>
+
+        <div class="modo-oscuro">
+            <div class="articulo">
+                <p>Este artículo está dentro del modo oscuro y cambia su apariencia.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav class="menu">
+            <a href="#" class="menu-item">Inicio</a>
+            <a href="#" class="menu-item">Formación</a>
+            <a href="#" class="menu-item">Noticias</a>
+            <a href="#" class="menu-item">Soporte</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
