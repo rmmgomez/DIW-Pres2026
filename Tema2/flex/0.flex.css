@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;   
+    background-color: #700000;
+    color: white;
+    align-items: center;
+    h1{
+        align-self: start;
+    }
+    nav {
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    /* flex-flow: row wrap; */
+    gap: 60px;
+    background-color: #700000;
+    padding: 1%;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    #alumnos{
+        order: 1;
+    }
+    #aulavirtual{
+        order: -1;
+    }
+}
+}
