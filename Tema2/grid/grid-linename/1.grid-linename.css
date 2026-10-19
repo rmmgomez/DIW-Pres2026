@@ -1,0 +1,58 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    gap: 20px;
+    /* Separación de cada celda del grid */
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: [inicio]1fr[fin1] 1fr[fin2]1fr[fin3]1fr[fin];
+    grid-template-rows: [Fini]100px[finf1]3fr[finf2]1fr[finf3]100px[Ffin];
+
+    .item {
+        /* Estilos comunes a todas las celdas */
+
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        padding: 20px;
+        color: white;
+        font-size: 1.2rem;
+        text-align: center;
+        place-content: center;
+    }
+    .header{
+        background-color: #4a90e2;
+        grid-column: inicio/fin;
+        grid-row: Fini / finf1;
+    }
+    .footer{
+        background-color: #4a90e2;
+        grid-column: inicio/fin;
+        grid-row: finf3 / Ffin;
+    }
+    .aside{
+        background-color: #4a90e2;
+        grid-column: inicio/fin1;
+        grid-row: finf1/finf3;
+    }
+    .main-content{
+        background-color: #4a90e2;
+        grid-column: fin1/fin;
+        grid-row: finf1/finf2;
+    }
+    .card-1{
+        background-color: #4a90e2;
+        grid-column: fin1/fin2;
+        grid-row: finf2/finf3;
+    }
+    .card-2{
+        background-color: #4a90e2;
+        grid-column: fin2/fin;
+        grid-row: finf2/finf3;
+    }
+}
