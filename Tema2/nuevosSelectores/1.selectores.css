@@ -1,0 +1,27 @@
+main .article1{
+    border: 1px solid blue;
+}
+
+main :is(.article1, .article2, .article3){
+    /* Selector Specificity: (0, 1, 1) */
+    border: 1px solid red;
+    margin: 5px;
+}
+
+main :where(.article1, .article2, .article3){
+    /* Selector Specificity: (0, 0, 1) */
+    border: 1px solid green;
+    margin: 5px;
+}
+
+article:has(>a){
+    background-color: pink;
+}
+article{
+    a{
+        background-color: green;
+    }
+}
+article:not(:has(> a)){
+    background-color: aqua;
+}
