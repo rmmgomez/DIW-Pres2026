@@ -1,0 +1,9 @@
+@layer default, utilities; /* Prueba a intercambiarlos */
+
+@import url(4.default.css) layer(default);
+@import url(4.utilities.css) layer(utilities);
+
+/* unlayer -- mayor prioridad */
+h1 {
+  color: purple;
+}

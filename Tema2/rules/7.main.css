@@ -1,0 +1,19 @@
+main {
+    min-width: 100px;
+    max-width: 500px;
+    padding: 20px;
+    background: red;
+    transition: background 1s;
+    border-radius: 15px;
+
+    &:hover {
+        background: --oscurecer(blue);
+        color: --suavizar(black);
+        @supports not (background: --oscurecer(blue)){
+            background-color: var(--color-oscuro);
+        }
+        @supports not (color: --suavizar(black)){
+            color: var(--color-suave);
+        }
+    }
+}

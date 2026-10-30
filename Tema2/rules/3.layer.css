@@ -1,0 +1,26 @@
+@layer default, utilities; /* Prueba a intercambiarlos */
+
+@layer default {
+  button {
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+  }
+}
+
+@layer utilities {
+    h1{
+        color: blue;
+    }
+  button{
+    background-color: red;
+  }
+}
+
+/* unlayer -- mayor prioridad */
+h1 {
+  color: purple;
+}
